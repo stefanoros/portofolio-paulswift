@@ -1,0 +1,881 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Stefan Oros">
+    <meta name="keywords"
+        content="Paul Swift, professional portofolio, game design, 3D games, kitty world, fairy forest, hazelnut treasure">
+    <meta name="description"
+        content="Paul Swift's proffesional portofolio. Here you will find my full catalogue of artworks and projects I worked on so far.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paul Swift's portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: linear-gradient(90deg, black, rgb(10, 10, 43), rgb(0, 2, 24));
+            background-attachment: fixed;
+            color: rgb(240, 250, 255);
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, black, rgb(10, 10, 43), rgb(0, 2, 24));
+
+        }
+
+        .navbar li {
+            display: block;
+            padding: 5px 5px;
+            margin-left: 20px;
+            background-color: rgba(199, 203, 223, 0.205);
+
+            border: 1px solid rgb(255, 183, 3);
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .nav-link {
+
+            color: rgb(251, 133, 0);
+        }
+
+        .nav-link:hover {
+            color: rgb(255, 183, 3);
+            text-decoration: none;
+
+        }
+
+        a.active {
+            color: rgb(251, 133, 0);
+        }
+
+
+        .container.fluid {
+            padding-bottom: 50%;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: rgb(251, 133, 0);
+            font-size: 2em;
+            margin-top: 5%;
+            white-space: nowrap;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: rgb(255, 183, 3);
+            font-size: 300%;
+            text-align: center;
+            padding-top: 1%;
+        }
+
+        h3 {
+            padding: 3%;
+            text-align: center;
+        }
+
+
+        .spacer {
+            margin: 5%;
+        }
+
+        .spacer-small {
+            margin: 2%;
+        }
+
+        .spacer-large {
+            margin: 15%;
+        }
+
+        .row {
+
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+
+        .portret {
+            width: 100%;
+
+            border-radius: 10%;
+            border: 2px solid rgba(254, 232, 193, 0.233);
+            align-self: center;
+
+        }
+
+        .col-logo {
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 0%;
+        }
+
+        .col-img {
+            width: 100%;
+
+        }
+
+        .btn-primary {
+            border-color: rgb(251, 134, 0);
+            font-weight: bold;
+        }
+
+        .card {
+            background: none;
+            border-top: 1px solid rgba(251, 134, 0, 0.275);
+            border-bottom: 1px solid rgba(251, 134, 0, 0.275);
+
+
+        }
+
+        .card-body {
+            min-height: 325px;
+        }
+
+
+        .text-padding {
+            padding: 5%;
+            text-align: center;
+        }
+
+        .text-highlight {
+            font-size: xx-large;
+            color: rgb(251, 133, 0);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+        }
+
+        .hobby {
+            width: 70%;
+            margin: auto;
+
+            border-radius: 35px;
+            border: 1px solid rgba(255, 184, 3, 0.249);
+
+        }
+
+        .row-center {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+        .accordion-body {
+            background-color: rgb(10, 10, 43);
+            color: white;
+            border-color: rgb(10, 10, 43);
+
+        }
+
+        .accordion-item {
+            background: none;
+            border: none;
+        }
+
+        .accordion-button {
+            background-color: rgb(251, 134, 0);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgb(255, 183, 3);
+            color: rgb(10, 10, 43);
+            box-shadow: none;
+        }
+
+        .project-title {
+            margin-left: 3%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .about-game {
+            font-weight: bold;
+            color: rgb(251, 133, 0);
+        }
+
+        img.projects {
+            width: 80%;
+            margin: 5%;
+            border-radius: 10%;
+            border: 1px solid rgb(255, 183, 3);
+        }
+
+        footer {
+            background-color: rgba(199, 203, 223, 0.205);
+            border-top: 1px solid rgba(199, 203, 223, 0.205);
+        }
+
+        .links-footer {
+            margin-left: 3%;
+            color: white;
+        }
+
+        .links-footer:hover {
+            color: rgb(251, 134, 0);
+        }
+
+        p.contacte {
+            color: rgb(251, 134, 0);
+            font-size: large;
+        }
+
+        p.adress {
+            display: inline-block;
+            padding: 15px 20px;
+            min-width: 100px;
+            margin-bottom: 10%;
+            margin-right: 15%;
+            align-items: center;
+            font-weight: bold;
+
+        }
+
+        .contact {
+
+            color: rgb(255, 183, 3);
+
+        }
+
+        .icons {
+            margin-right: 5%;
+        }
+
+
+        .links-contact {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .links-contact:hover {
+            color: rgb(251, 134, 0);
+        }
+
+        .col-contact {
+            align-items: center;
+        }
+
+        .col-map {
+            margin-bottom: 5%;
+            margin-left: 10%;
+        }
+
+        img.map {
+            width: 100%;
+            margin: auto;
+            border-radius: 10%;
+            border: 2px solid rgba(254, 232, 193, 0.233);
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAVBAR-->
+
+    <nav class="navbar sticky-top">
+        <div class="container">
+            <div class="row-center">
+                <div class="col">
+                    <div class="col-card">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo.png" alt="logo of the Paul Swift's website" width="80" height="80">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="col-card">
+                        <h1 class="user-select-none">Paul swift</h1>
+                    </div>
+                </div>
+            </div>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+
+    <!--Caruselul cu imaginile-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container.fluid">
+                    <img src="work1.jpg" class="d-block w-100"
+                        alt="workplace desk, an open laptop close to a hand that holds a graphic design pen">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container.fluid">
+                    <img src="work2.jpg" class="d-block w-100"
+                        alt="3D designed yellow and silver blocks with variable dimensions">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container.fluid">
+                    <img src="work3.jpg" class="d-block w-100"
+                        alt="a working place desk that holds a big graphic design tablet">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container.fluid">
+                    <img src="work4.jpg" class="d-block w-100" alt="3D designed black blocks with variable dimensions">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container.fluid">
+                    <img src="work5.jpg" class="d-block w-100" alt="3D earth in space">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!--Introducerea cu despre mine si hobbyuri-->
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body-text">
+                    <h2 id="About">About me</h2>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-small"></div>
+
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+
+                <div class="text-padding">
+                    <div class="text-highlight">
+                        <p>Nice to see you!</p>
+                        <p>I'm Paul, a game designer at Nintendo.</p>
+                    </div>
+                    <p>I studied game design at the NYU Game Center and now, I'm a game
+                        designer who lives in New York, USA and who's very passionate about creating unique artworks
+                        for
+                        video-games
+                        that can attract as many people as possible. I love to tell stories with my design and to
+                        create
+                        characters
+                        that every player will adore.</p>
+
+                    <p>Since 2019 I started working at Nintendo but I also put my focus on the freelance part
+                        because I
+                        enjoy being
+                        "out there" in the world, being ready to come in hand is someone needs professional help.
+                    </p>
+                    <button type="button" class="btn btn-primary position-relative bg-warning bg-gradient text-dark">
+                        Active now
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="portret" src="Portret.jpg"
+                    alt="Paul Swift profile picture, he has ginger hair and beard and he's looking at the camera looking serious">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="spacer"></div>
+
+    <!--4 carduri cu hobbyuri-->
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="hobby">
+                    <div class="col-img">
+                        <img src="reading.jpg" class="card-img-top" alt="a library full of multicolored books">
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-warning bg-dark">I'm a big fan of books</h3>
+                        <div class="text-padding">
+                            <p class="card-text"> I'm
+                                having a great time just reading things in my free time. I mostly look up after
+                                books
+                                that can give me inspiration. Sci-fi books always tend to sparkle something in my
+                                brain,
+                                to make my thoughts go wild, to put my imagination at work. I think reading is
+                                important
+                                in any form. I think a person who's trying to learn to like reading should start off
+                                reading about a topic they are interested in, or a person they are interested in.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hobby">
+                    <div class="col-img">
+                        <img src="dog1.jpg" class="card-img-top"
+                            alt="a black dog with a hoodie on it that almost covers all of it's face">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-warning bg-dark">I'm an animal lover</h3>
+                        <div class="text-padding">
+                            <p class="card-text">Animals are pure souls that only deserve love and protection. It
+                                doesn't matter if it's a horse, a zebra or a dog, the love I hold for animals
+                                doesn't
+                                have any limit. I see myself as a dog person, since I'm allergic to cats and
+                                currently I
+                                have a dog named Dudu.
+                                I like to believe I'm giving him the best life he could ever imagine. I love to
+                                spoil
+                                him, act like he is my little kid. Dudu loves long walks and that it's a big bonus
+                                for
+                                me too cause I enjoy jogging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hobby">
+                    <div class="col-img">
+                        <img src="family.jpeg" class="card-img-top"
+                            alt="grandmother that holds her small and young niece in her arms while they are happy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-warning bg-dark">Loving photography</h3>
+                        <div class="text-padding">
+                            <p class="card-text">Taking pictures with my camera is one of my favourite hobbies. I
+                                love
+                                the fact that I can capture such wonderful moments in time. A thing that you see in
+                                my
+                                pictures is that I was not afraid to fall in love with these people... and by those
+                                people I mean my family. They are my everything, it means that no one gets left
+                                behind
+                                or forgotten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hobby">
+                    <div class="col-img">
+                        <img src="travel.jpg" class="card-img-top" alt="3D designed map from Europe from above">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-warning bg-dark">I adore travelling</h3>
+                        <div class="text-padding">
+                            <p class="card-text">When I was working on my career, I was very aware of what I had
+                                done,
+                                what I wanted to do right next after reachiving my goals, and that was travelling.
+                                The
+                                world is full of wonders and after all, we only live once so I hope as long as I'm
+                                alive, I will get the chance to visit every single country of this world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--My projects-->
+
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body-text">
+                    <h2 id="Projects">Projects</h2>
+                </div>
+            </div>
+            <div class="spacer-small"></div>
+            <p>I studied game design at the NYU Game Center and now, I'm a game
+                designer who lives in New York, USA and who's very passionate about creating unique artworks for
+                video-games
+                that can attract as many people as possible. I love to tell stories with my design and to create
+                characters
+                that every player will adore.Since 2019 I started working at Nintendo but I also put my focus on the
+                freelance part because I
+                enjoy being "out there" in the world, being ready to come in hand is someone needs professional
+                help.
+            </p>
+
+            <!--acordeon cu cele trei proiecte-->
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-1-square-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+                            </svg>
+
+                            <div class="project-title">
+                                Kitty World: Jerry's apocalypse
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="about-game">About the design:</div>
+                            For the main characters I took inspiration from the popular Tv cartoon show that
+                            everybody
+                            knows, and that is "Tom and Jerry". I wanted to make the main character: Jerry, as much
+                            human as possible and that's why I made him wearing bad-ass retro clothes. The big
+                            villains
+                            of the game are: the Kitties. I made them all look the same and even if they look
+                            adorable,like you want to pet them, like they are inoccent, the players will find out
+                            that
+                            things are not always what they seem...
+
+                            <div class="spacer-small"></div>
+
+                            <div class="about-game">About the game:</div>
+                            The game follows a pirate mouse, Jerry, who is looking for a secret cheese weapon to end
+                            the
+                            tirany of the rullers of the world, the Kitties. These are some concept artworks I
+                            designed
+                            for the main characters of the game:
+                            <div class="spacer"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="cat_down.jpeg" class="projects"
+                                            alt="3D orange cat staying on the ground with starring blue-green eyes">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="mouse_rszz.jpeg" class="projects"
+                                            alt="a 3D mouse dressed as a pirate with aviator glasses on it's eyes">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="cat-rsz.jpeg" class="projects"
+                                            alt="3D orange cat laying on the ground surrounded by autumn leaves">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-2-square-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+                            </svg>
+                            </svg>
+                            <div class="project-title">
+                                The fairy forest
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="about-game">About the design:</div>
+                            When I first started sketching for this game, I knew I had to add as much magic as
+                            possible,
+                            but also keep it close to the reality that we live in. Taking long walks into Central
+                            Park
+                            helped me to achieve a closer ideea to what I wanted the designs to look like and since
+                            the
+                            target audience for this game were kids between 7 and 12 years old, I choosed the
+                            animals in
+                            the game to have "baby" looks.
+
+                            <div class="spacer-small"></div>
+
+                            <div class="about-game">About the game:</div>
+                            It's like a bed-time story but put in a virtual game. Fairy-land is a mystic realm where
+                            every animal and magical beeing can find shelter in the fairy Bella's house. Everything
+                            is
+                            peacefull until one day, when the anti-hero comes and steals the book of spells from
+                            Bella,
+                            the good fairy. A hero must come in hand, or everything might be in danger... These are
+                            some
+                            concept artworks I designed for the game:
+                            <div class="spacer"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="fox_rsz.jpeg" class="projects"
+                                            alt="3D baby furry fox with big blue eyes">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="fairy-house-rsz.jpeg" class="projects"
+                                            alt="3D fairy house in the middle of a magic forest">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="frog_rsz.jpeg" class="projects" alt="3D small green frog">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-3-square-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+                            </svg>
+                            <div class="project-title">
+                                Hazelnut treasure
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <div class="about-game">About the design:</div>
+                            When I started designing for this game, I took a look over at one of the main characters
+                            from the popular, well known, Ice Age franchise - and that is Scrat, the squirrel who is
+                            always having troubles with collecting his beloved accorns. That's the main source of my
+                            inspiration for this game.
+
+                            <div class="spacer-small"></div>
+
+                            <div class="about-game">About the game:</div>
+                            Winter is coming...but this is not a regular and short winter since the dark warlock put
+                            a
+                            black spell over all the realm of Hazelnustria. Alvin and his family are in big danger
+                            but
+                            there is nothing he wouldn't do to keep his family safe. He asks for help from the White
+                            Bunny, a powerful wizard and they both go in a journey to find the hazelnut treasure,
+                            the
+                            only thing that can stop the long winter curse and keep everyone safe. These are some
+                            concept artworks I designed for the main characters of the game:
+                            <div class="spacer"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="veverita_rsz.jpeg" class="projects"
+                                            alt="3D squirrel holding a bag full of peanuts">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img src="bunny_rsz.jpeg" class="projects"
+                                            alt="3D bunny standing and dressed in a robe">
+                                    </div>
+                                    <div class="col">
+                                        <img src="veverita2_rsz.jpeg" class="projects"
+                                            alt="3D squirrel sitting behind a blue sack and surrounded by hazelnuts">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTIUNEA DE CONTACT-->
+
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body-text">
+
+                    <h2 id="Contact">Contact</h2>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-small"></div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <p>I enjoy helping people. Small or big things, it doesn't matter: a helping hand is a
+                    helping hand.</p>
+                <p><span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                        </svg></span>Email adress:<span class="contact"> paul.swift@gmail.com</span></p>
+
+
+                <p><span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg></span>Phone number:<span class="contact"> +0769260279232</span></p>
+
+
+                <p><span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg></span>Location:<span class="contact"> 2880 Broadway, New York, NY 10025,
+                        USA</span>
+                </p>
+                <div class="spacer-large"></div>
+
+                <p class="contacte">Do you have any questions? Then here are some ways to contact me:</p>
+                <div class="col">
+
+                    <p class="adress"><a class="links-contact" href="https://www.facebook.com/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                            Facebook</a></p>
+                    <p class="adress"><a class="links-contact" href="https://www.instagram.com/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>Instagram</a></p>
+                </div>
+                <div class="col">
+                    <p class="adress"><a class="links-contact" href="https://www.whatsapp.com/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>Whatsapp</a></p>
+                    <p class="adress"><a class="links-contact" href="https://www.linkedin.com/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+
+                <a href="https://www.google.com/maps/place/2280+Broadway,+New+York,+NY+10024,+USA/@40.7857877,-73.9782163,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258866f2bf5e9:0xc461e8809940be03!8m2!3d40.7857877!4d-73.9782163"
+                    target="_blank"><img class="map" src="map.png" alt="2D map of a part of new york"></a>
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+    <footer class="text-white text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h4 class="text-uppercase text-warning mb-4">Contact information</h4>
+                    <p>
+                        Available 24/7. Feel free to contact me anytime.
+                    </p>
+                    <a class="links-footer" href="https://www.facebook.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a class="links-footer" href="https://www.instagram.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a class="links-footer" href="https://www.whatsapp.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a class="links-footer" href="https://www.linkedin.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h4 class="text-uppercase text-warning mb-4">Additional information</h4>
+                    <p>Privacy & Policy</p>
+                    <p>© 2022 Copyright</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
