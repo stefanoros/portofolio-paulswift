@@ -20,41 +20,30 @@
     <style>
         body {
             background: linear-gradient(90deg, black, rgb(10, 10, 43), rgb(0, 2, 24));
+            font-family: 'Urbanist';
             background-attachment: fixed;
             color: rgb(240, 250, 255);
         }
 
-        .navbar {
-            background: linear-gradient(90deg, black, rgb(10, 10, 43), rgb(0, 2, 24));
-
+        .row {
+            align-items: center;
         }
 
-        .navbar li {
-            display: block;
-            padding: 5px 5px;
-            margin-left: 20px;
-            background-color: rgba(199, 203, 223, 0.205);
-
-            border: 1px solid rgb(255, 183, 3);
-            border-radius: 25px;
+        a.nav-link {
+            color: rgb(255, 183, 3) !important;
             font-weight: bold;
-            text-decoration: none;
-
+            margin-left: 20%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            white-space: nowrap;
         }
 
-        .nav-link {
-
-            color: rgb(251, 133, 0);
+        a.nav-link:hover {
+            color: white !important;
         }
 
-        .nav-link:hover {
-            color: rgb(255, 183, 3);
-            text-decoration: none;
-
-        }
-
-        a.active {
-            color: rgb(251, 133, 0);
+        .navbar {
+            background: rgb(0, 2, 24);
         }
 
 
@@ -63,10 +52,12 @@
         }
 
         h1 {
+            display: inline;
             text-transform: uppercase;
             color: rgb(251, 133, 0);
-            font-size: 2em;
-            margin-top: 5%;
+            font-size: bolder;
+            align-self: center;
+            text-transform: uppercase;
             white-space: nowrap;
         }
 
@@ -81,6 +72,12 @@
         h3 {
             padding: 3%;
             text-align: center;
+        }
+
+        h3.contact {
+            color: rgb(251, 134, 0);
+            font-size: large;
+
         }
 
 
@@ -126,8 +123,12 @@
         }
 
         .btn-primary {
-            border-color: rgb(251, 134, 0);
+            border-color: rgb(240, 250, 255);
             font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            border-color: rgb(9, 255, 0);
         }
 
         .card {
@@ -161,7 +162,6 @@
         .hobby {
             width: 70%;
             margin: auto;
-
             border-radius: 35px;
             border: 1px solid rgba(255, 184, 3, 0.249);
 
@@ -229,10 +229,6 @@
             color: rgb(251, 134, 0);
         }
 
-        h3.contact {
-            color: rgb(251, 134, 0);
-            font-size: large;
-        }
 
         p.adress {
             display: inline-block;
@@ -269,56 +265,45 @@
         .col-contact {
             align-items: center;
         }
-
-        .col-map {
-            margin-bottom: 5%;
-            margin-left: 10%;
-        }
-
-        img.map {
-            width: 100%;
-            margin: auto;
-            border-radius: 10%;
-            border: 2px solid rgba(254, 232, 193, 0.233);
-
-        }
     </style>
 </head>
 
 <body>
     <!--NAVBAR-->
 
-    <nav class="navbar sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <div class="row-center">
+            <div class="row">
                 <div class="col">
-                    <div class="col-card">
-                        <a class="navbar-brand" href="#">
-                            <img src="logo.png" alt="logo of the Paul Swift's website" width="80" height="80">
-                        </a>
-                    </div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="logo of the Paul Swift's website" width="70" height="70">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="navbar-brand" href="index.html">
+                        <h1>Paul Swift</h1>
+                    </a>
                 </div>
 
-                <div class="col">
-                    <div class="col-card">
-                        <h1 class="user-select-none">Paul swift</h1>
-                    </div>
-                </div>
-            </div>
-
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#About">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
+          </div>
+          <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-warning"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#About">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
     <!--Caruselul cu imaginile-->
@@ -406,7 +391,7 @@
                     <button type="button" class="btn btn-primary position-relative bg-warning bg-gradient text-dark">
                         Active now
                         <span
-                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
                             <span class="visually-hidden">New alerts</span>
                         </span>
                     </button>
@@ -612,7 +597,7 @@
                                 <path
                                     d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
                             </svg>
-                           
+
                             <div class="project-title">
                                 The fairy forest
                             </div>
@@ -801,18 +786,22 @@
                             </svg> LinkedIn</a></p>
 
                 </div>
+
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-
-                <a href="https://www.google.com/maps/place/2280+Broadway,+New+York,+NY+10024,+USA/@40.7857877,-73.9782163,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258866f2bf5e9:0xc461e8809940be03!8m2!3d40.7857877!4d-73.9782163"
-                    target="_blank"><img class="map" src="map.png" alt="2D map of a part of new york"></a>
-
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 text-center">
+                <div class="ratio ratio-4x3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.919325916807!2d-73.9782163!3d40.7857877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258866f2bf5e9%3A0xc461e8809940be03!2s2280%20Broadway%2C%20New%20York%2C%20NY%2010024%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1671022538325!5m2!1sro!2sro"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
 
-
     </div>
-  
+
+
+
 
     <footer class="text-white text-center text-lg-start">
         <div class="container p-4">
